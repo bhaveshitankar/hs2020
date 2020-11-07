@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="utf-8">
+    <title>My Show</title>
+    <%= stylesheetTag("application.css") %>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="<%= authenticity_token %>" />
+    <link rel="icon" href="<%= assetPath("images/favicon.ico") %>">
+    <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> -->
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- </head> -->
+    <!-- <body> -->
+    <%= yield %>
+    <%= javascriptTag("application.js") %>
+    </body>    
+</html>
+  <!-- </head>
+  <body>
+
+  <div class="container" style="margin: 0px;">
+    </div>
+  </body>
+</html> -->
